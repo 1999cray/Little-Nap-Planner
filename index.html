@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#203b46"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Nap Planner"><meta name="description" content="An offline nap planner with flexible wake windows, mandatory naps, and a visual timeline."><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/icon-180.png"><link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png"><title>Little Nap Planner</title><style>
-:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f7f6;color:#203b46}*{box-sizing:border-box}body{margin:0}.wrap{max-width:680px;margin:auto;padding:23px 16px 55px}header{margin-bottom:20px}h1{margin:0 0 5px;font-size:1.8rem}.muted{color:#62757c;font-size:.91rem;line-height:1.5;margin:0}.card{background:#fff;border:1px solid #dce6e5;border-radius:18px;box-shadow:0 5px 19px #1834400a;padding:18px;margin-bottom:14px}h2{font-size:1.1rem;margin:0 0 14px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field label,.field .lbl{display:block;font-size:.85rem;font-weight:650;margin-bottom:7px}.field input{width:100%;min-width:0;height:45px;padding:8px;border:1px solid #cbd9d9;background:#fff;border-radius:9px;font-size:1rem;color:#203b46}.field input:focus{outline:3px solid #b9e5dd;border-color:#358174}.wide{grid-column:1/-1}.small{font-size:.8rem;color:#61747a;margin:5px 0;line-height:1.45}.actions{display:flex;gap:9px;margin-top:16px;flex-wrap:wrap}button{border:0;border-radius:11px;background:#246e69;color:#fff;padding:12px 15px;font-size:.92rem;font-weight:700;cursor:pointer}button.secondary{background:#e8f1ef;color:#205c59}button.remove{padding:9px 12px;background:#f7eeee;color:#944e4e}button:active{transform:scale(.99)}.fixed-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;margin-bottom:9px}.fixed-row label{display:block;font-size:.8rem;font-weight:600;margin-bottom:5px}.fixed-row input{width:100%;height:43px;font-size:1rem;border-radius:9px;border:1px solid #cbd9d9;padding:8px;color:#203b46;background:#fff}.highlight{background:#eaf6f2;border:1px solid #cce9dd;border-radius:14px;padding:15px;margin-bottom:15px}.eyebrow{font-size:.77rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#457b72}.big{font-size:1.65rem;font-weight:800;line-height:1.3;margin:3px 0}.sub{font-size:.9rem;color:#496c69}.warning{background:#fff5e5;border:1px solid #f3dbb2;border-radius:11px;padding:11px 13px;font-size:.85rem;color:#80551a;margin:9px 0}.error{color:#a12d28;font-size:.9rem}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:10px;border-top:1px solid #e8eeee;padding:11px 0}.timeline li:first-child{border:0}.timeline strong{display:block}.time{font-size:.88rem;font-weight:750;color:#246e69;padding-top:2px}.pill{display:inline-block;border-radius:20px;padding:2px 8px;font-size:.73rem;font-weight:650;background:#eaf1f1;color:#45676b;margin-top:5px}.pill.fixed{background:#fff0d8;color:#865d18}.footer{font-size:.8rem;color:#6a7b7d;text-align:center;padding:8px 15px}.axis{display:flex;justify-content:space-between;margin:7px 0;color:#61747a;font-size:.75rem}.track{height:55px;border:1px solid #dce6e5;border-radius:9px;position:relative;background:#e8f1ef;overflow:hidden}.segment{position:absolute;top:0;height:100%;border-left:1px solid #fff8}.segment.nap{background:#72b6a4}.segment.fixed{background:#d8a958}.segment.wake{background:#dcebe7}.tracklabel{position:absolute;top:16px;left:0;width:100%;text-align:center;font-size:.73rem;font-weight:750;color:#183e3d;white-space:nowrap;overflow:hidden}.ticks{display:flex;justify-content:space-between;margin:6px 0 10px;font-size:.72rem;color:#657880}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;color:#52666b;margin-top:11px}.dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}.schedule-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}#fixedList:empty::after{content:'No mandatory naps added';display:block;color:#62757c;font-size:.85rem;padding:8px 0 10px}@media(max-width:355px){.fields{grid-template-columns:1fr}.wide{grid-column:1/-1}.timeline li{grid-template-columns:72px 1fr}}
-</style></head><body><main class="wrap"><header><h1>☁️ Little Nap Planner</h1><p class="muted">Plan from any wake-up time. Flexible wake windows, consistent naps, and bedtime at the end of a valid wake window.</p></header>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f7f6;color:#203b46}*{box-sizing:border-box}body{margin:0}.wrap{max-width:680px;margin:auto;padding:23px 16px 55px}header{margin-bottom:20px}h1{margin:0 0 5px;font-size:1.8rem}.muted{color:#62757c;font-size:.91rem;line-height:1.5;margin:0}.card{background:#fff;border:1px solid #dce6e5;border-radius:18px;box-shadow:0 5px 19px #1834400a;padding:18px;margin-bottom:14px}h2{font-size:1.1rem;margin:0 0 14px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field label,.field .lbl{display:block;font-size:.85rem;font-weight:650;margin-bottom:7px}.field input{width:100%;min-width:0;height:45px;padding:8px;border:1px solid #cbd9d9;background:#fff;border-radius:9px;font-size:1rem;color:#203b46}.field input:focus{outline:3px solid #b9e5dd;border-color:#358174}.wide{grid-column:1/-1}.small{font-size:.8rem;color:#61747a;margin:5px 0;line-height:1.45}.actions{display:flex;gap:9px;margin-top:16px;flex-wrap:wrap}button{border:0;border-radius:11px;background:#246e69;color:#fff;padding:12px 15px;font-size:.92rem;font-weight:700;cursor:pointer}button.secondary{background:#e8f1ef;color:#205c59}button.remove{padding:9px 12px;background:#f7eeee;color:#944e4e}button:active{transform:scale(.99)}.fixed-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;margin-bottom:9px}.fixed-row label{display:block;font-size:.8rem;font-weight:600;margin-bottom:5px}.fixed-row input{width:100%;height:43px;font-size:1rem;border-radius:9px;border:1px solid #cbd9d9;padding:8px;color:#203b46;background:#fff}.highlight{background:#eaf6f2;border:1px solid #cce9dd;border-radius:14px;padding:15px;margin-bottom:15px}.eyebrow{font-size:.77rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#457b72}.big{font-size:1.65rem;font-weight:800;line-height:1.3;margin:3px 0}.sub{font-size:.9rem;color:#496c69}.warning{background:#fff5e5;border:1px solid #f3dbb2;border-radius:11px;padding:11px 13px;font-size:.85rem;color:#80551a;margin:9px 0}.error{color:#a12d28;font-size:.9rem}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:10px;border-top:1px solid #e8eeee;padding:11px 0}.timeline li:first-child{border:0}.timeline strong{display:block}.time{font-size:.88rem;font-weight:750;color:#246e69;padding-top:2px}.pill{display:inline-block;border-radius:20px;padding:2px 8px;font-size:.73rem;font-weight:650;background:#eaf1f1;color:#45676b;margin-top:5px}.pill.fixed{background:#fff0d8;color:#865d18}.footer{font-size:.8rem;color:#6a7b7d;text-align:center;padding:8px 15px}.axis{display:flex;justify-content:space-between;margin:7px 0;color:#61747a;font-size:.75rem}.track{height:55px;border:1px solid #dce6e5;border-radius:9px;position:relative;background:#e8f1ef;overflow:hidden}.segment{position:absolute;top:0;height:100%;border-left:1px solid #fff8}.segment.nap{background:#72b6a4}.segment.fixed{background:#d8a958}.segment.wake{background:#dcebe7}.tracklabel{position:absolute;top:16px;left:0;width:100%;text-align:center;font-size:.73rem;font-weight:750;color:#183e3d;white-space:nowrap;overflow:hidden}.ticks{display:flex;justify-content:space-between;margin:6px 0 10px;font-size:.72rem;color:#657880}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;color:#52666b;margin-top:11px}.dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}.schedule-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}.alternatives{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0 16px}.alternative{border:1px solid #cbded9;border-radius:13px;padding:13px;background:#f8fbfa}.alternative .big{font-size:1.4rem}.alternative button{width:100%;margin-top:10px}.alternative.chosen{border:2px solid #246e69;background:#eaf6f2}.alternative.unavailable{opacity:.72;background:#f4f6f6}.alternatives[hidden]{display:none!important}@media(max-width:420px){.alternatives{grid-template-columns:1fr}}#fixedList:empty::after{content:'No mandatory naps added';display:block;color:#62757c;font-size:.85rem;padding:8px 0 10px}@media(max-width:355px){.fields{grid-template-columns:1fr}.wide{grid-column:1/-1}.timeline li{grid-template-columns:72px 1fr}}
+.comparison-note{font-size:.79rem;color:#52666b;margin:8px 0 2px;line-height:1.5}.compare-row{margin:9px 0 14px}.compare-row.active .compare-track{outline:2px solid #246e69;outline-offset:2px}.compare-heading{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px;font-size:.79rem;font-weight:700}.compare-heading .selected-tag{font-weight:500;color:#246e69}.compare-track{height:54px;border:1px solid #dce6e5;border-radius:8px;position:relative;background:#dcebe7;overflow:visible}.compare-track .segment{overflow:hidden;border-radius:0}.compare-track .segment:first-child{border-radius:7px 0 0 7px}.compare-track .segment:last-of-type{border-radius:0 7px 7px 0}.marker{position:absolute;top:-3px;bottom:-3px;width:0;border-left:3px solid;z-index:4;pointer-events:none;filter:drop-shadow(0px 0px 1px #fff)}.marker.goal{border-color:#7659bf;border-left-style:dashed}.marker.early{border-color:#16866d}.marker.late{border-color:#c15c45}.compare-axis{display:flex;justify-content:space-between;margin-top:4px;color:#657880;font-size:.73rem}.marker-legend{display:flex;gap:9px 15px;flex-wrap:wrap;margin-top:12px;font-size:.79rem;color:#435a61}.marker-key{display:inline-block;height:15px;border-left:3px solid;vertical-align:middle;margin-right:6px}.marker-key.goal{border-color:#7659bf;border-left-style:dashed}.marker-key.early{border-color:#16866d}.marker-key.late{border-color:#c15c45}.track.compare-mode{height:auto;overflow:visible;border:0;border-radius:0;background:transparent}.comparison-legend-title{font-size:.78rem;font-weight:700;color:#405b63;margin:12px 0 2px}</style></head><body><main class="wrap"><header><h1>☁️ Little Nap Planner</h1><p class="muted">Plan from any wake-up time. Flexible wake windows, consistent naps, and bedtime at the end of a valid wake window.</p></header>
 <section class="card"><h2>Plan the rest of the day</h2><div class="fields"><div class="field"><label for="woke">Last woke up</label><input id="woke" type="time" value="14:00"></div><div class="field"><label for="bed">Bedtime goal</label><input id="bed" type="time" value="19:30"></div><div class="field"><label for="wakeMin">Minimum wake window (minutes)</label><input id="wakeMin" type="number" min="15" max="360" step="5" value="75"></div><div class="field"><label for="wakeMax">Maximum wake window (minutes)</label><input id="wakeMax" type="number" min="15" max="360" step="5" value="110"></div><div class="field"><label for="naplen">Target nap length (minutes)</label><input id="naplen" type="number" min="10" max="300" step="5" value="60"></div><div class="field"><label for="napFlex">Nap length flexibility (± minutes)</label><input id="napFlex" type="number" min="0" max="30" step="5" value="15"></div><div class="field wide"><div class="lbl">Mandatory naps</div><p class="small">Add as many fixed nap start times as needed. Fixed nap starts take priority. Nap lengths stay close to your target (within your tolerance); wake windows flex within your range.</p><div id="fixedList"></div><button class="secondary" type="button" id="add">+ Add mandatory nap</button></div></div><div class="actions"><button id="calc">Update schedule</button><button class="secondary" id="now">Just woke up now</button><button class="secondary" id="clearFixed">Clear fixed naps</button></div><p id="error" class="error" role="alert"></p></section>
-<section class="card" id="results" aria-live="polite"><h2>Remaining-day schedule</h2><div class="highlight"><div class="eyebrow">Next planned nap</div><div class="big" id="next">—</div><div class="sub" id="nextdetail"></div></div><div id="warnings"></div><div class="schedule-head"><strong>Visual timeline</strong><span class="small">Wake-up → bedtime · final wake window enforced</span></div><div class="axis"><span id="axisStart"></span><span id="axisEnd"></span></div><div class="track" id="visual" role="img" aria-label="Nap schedule"></div><div class="legend"><span><i class="dot" style="background:#dcebe7"></i>Awake</span><span><i class="dot" style="background:#72b6a4"></i>Suggested nap</span><span><i class="dot" style="background:#d8a958"></i>Mandatory nap</span></div><h2 style="margin-top:24px">Schedule details</h2><ol class="timeline" id="timeline"></ol></section><p class="footer">This is a planning aid, not a medical sleep recommendation. Follow your baby's cues and feeding needs. Data stays on each device; no login or sync.</p></main>
+<section class="card" id="results" aria-live="polite"><h2>Remaining-day schedule</h2><div class="highlight"><div class="eyebrow">Next planned nap</div><div class="big" id="next">—</div><div class="sub" id="nextdetail"></div></div><div id="warnings"></div><div id="alternatives" class="alternatives" hidden></div><div class="schedule-head"><strong>Visual timeline</strong><span class="small">Wake-up → bedtime · final wake window enforced</span></div><div class="axis"><span id="axisStart"></span><span id="axisEnd"></span></div><div class="track" id="visual" role="img" aria-label="Nap schedule"></div><div id="markerLegend" class="marker-legend" hidden></div><div class="legend"><span><i class="dot" style="background:#dcebe7"></i>Awake</span><span><i class="dot" style="background:#72b6a4"></i>Suggested nap</span><span><i class="dot" style="background:#d8a958"></i>Mandatory nap</span></div><h2 style="margin-top:24px">Schedule details</h2><ol class="timeline" id="timeline"></ol></section><p class="footer">This is a planning aid, not a medical sleep recommendation. Follow your baby's cues and feeding needs. Data stays on each device; no login or sync.</p></main>
 <script>(()=>{'use strict';
 const $=id=>document.getElementById(id), DAY=1440;let fixedTimes=[];
 const tm=s=>/^\d\d:\d\d$/.test(s)&&+s.slice(0,2)<24&&+s.slice(3)<60?+s.slice(0,2)*60+(+s.slice(3)):null;
@@ -12,7 +12,45 @@ function save(){try{localStorage.setItem('littleNapSettingsV3',JSON.stringify({w
 function renderFixed(){let root=$('fixedList');root.replaceChildren();fixedTimes.forEach((v,i)=>{const row=document.createElement('div');row.className='fixed-row';const group=document.createElement('div');const label=document.createElement('label');label.textContent=`Mandatory nap ${i+1} start`;label.htmlFor=`fixed-${i}`;const input=document.createElement('input');input.type='time';input.id=`fixed-${i}`;input.value=v;input.addEventListener('change',()=>{fixedTimes[i]=input.value;plan()});group.append(label,input);const remove=document.createElement('button');remove.className='remove';remove.textContent='Remove';remove.type='button';remove.setAttribute('aria-label',`Remove mandatory nap ${i+1}`);remove.addEventListener('click',()=>{fixedTimes.splice(i,1);renderFixed();plan()});row.append(group,remove);root.append(row)})}
 function warn(t){const n=document.createElement('div');n.className='warning';n.textContent=t;$('warnings').append(n)}
 function row(start,title,description,type){const li=document.createElement('li'),left=document.createElement('div'),right=document.createElement('div'),name=document.createElement('strong'),desc=document.createElement('div');left.className='time';left.textContent=fmt(start);name.textContent=title;desc.className='small';desc.textContent=description;right.append(name,desc);if(type){const tag=document.createElement('span');tag.className='pill '+(type==='fixed'?'fixed':'');tag.textContent=type==='fixed'?'Mandatory':'Suggested';right.append(tag)}li.append(left,right);$('timeline').append(li)}
-function draw(start,bed,events){let track=$('visual');track.replaceChildren();$('axisStart').textContent=fmt(start);$('axisEnd').textContent=fmt(bed);const segments=[];let last=start;for(const e of events){if(e.start>last)segments.push({start:last,end:e.start,type:'wake'});segments.push({...e,type:e.fixed?'fixed':'nap'});last=e.end}if(last<bed)segments.push({start:last,end:bed,type:'wake'});const total=bed-start;for(const seg of segments){const item=document.createElement('div');item.className='segment '+seg.type;item.style.left=`${(seg.start-start)/total*100}%`;item.style.width=`${(seg.end-seg.start)/total*100}%`;const text=seg.type==='wake'?'Awake':`${Math.round(seg.end-seg.start)}m`;item.title=`${seg.type==='wake'?'Awake':seg.type==='fixed'?'Mandatory nap':'Suggested nap'}: ${rng(seg.start,seg.end)}`;item.setAttribute('aria-label',item.title);if((seg.end-seg.start)/total>.085){const label=document.createElement('div');label.className='tracklabel';label.textContent=text;item.append(label)}track.append(item)}track.setAttribute('aria-label',segments.map(s=>`${s.type==='wake'?'Awake':s.type==='fixed'?'Mandatory nap':'Suggested nap'} ${rng(s.start,s.end)}`).join('; '))}
+function draw(start,bed,events,goal=bed,options=null,mode='goal'){
+ const visual=$('visual'),legend=$('markerLegend');visual.replaceChildren();legend.replaceChildren();
+ const hasOptions=!!(options&&(options.early||options.late));visual.classList.toggle('compare-mode',hasOptions);legend.hidden=false;
+ const maxBed=hasOptions?Math.max(goal,...['early','late'].filter(k=>options[k]).map(k=>options[k].bed)):bed;
+ const total=Math.max(1,maxBed-start);
+ $('axisStart').textContent=fmt(start);$('axisEnd').textContent=fmt(maxBed);
+ function key(kind,label,time){const item=document.createElement('span');const dash=document.createElement('i');dash.className='marker-key '+kind;item.append(dash,document.createTextNode(`${label}: ${fmt(time)}`));legend.append(item)}
+ key('goal','Goal',goal);
+ if(hasOptions){if(options.early)key('early','Earlier',options.early.bed);if(options.late)key('late','Later',options.late.bed)}
+ function makeTrack(parent,rowBed,rowEvents){
+  const segments=[];let last=start;
+  for(const e of rowEvents){if(e.start>last)segments.push({start:last,end:e.start,type:'wake'});segments.push({...e,type:e.fixed?'fixed':'nap'});last=e.end}
+  if(last<rowBed)segments.push({start:last,end:rowBed,type:'wake'});
+  for(const seg of segments){
+   const item=document.createElement('div');item.className='segment '+seg.type;
+   item.style.left=`${(seg.start-start)/total*100}%`;item.style.width=`${(seg.end-seg.start)/total*100}%`;
+   item.title=`${seg.type==='wake'?'Awake':seg.type==='fixed'?'Mandatory nap':'Suggested nap'}: ${rng(seg.start,seg.end)}`;
+   if((seg.end-seg.start)/total>.085){const tag=document.createElement('div');tag.className='tracklabel';tag.textContent=seg.type==='wake'?'Awake':`${Math.round(seg.end-seg.start)}m`;item.append(tag)}
+   parent.append(item);
+  }
+  const marks=[['goal',goal]];
+  if(hasOptions){if(options.early)marks.push(['early',options.early.bed]);if(options.late)marks.push(['late',options.late.bed])}
+  for(const [kind,time] of marks){const marker=document.createElement('div');marker.className='marker '+kind;marker.style.left=`${(time-start)/total*100}%`;marker.title=`${kind==='goal'?'Bedtime goal':kind==='early'?'Earlier bedtime':'Later bedtime'}: ${fmt(time)}`;parent.append(marker)}
+  return segments;
+ }
+ if(!hasOptions){makeTrack(visual,bed,events);visual.setAttribute('aria-label',`Nap schedule through ${fmt(bed)}; purple dashed line shows bedtime goal`);return}
+ const note=document.createElement('div');note.className='comparison-note';note.textContent=options.distinctNapCounts?'Compare the shorter day (one fewer nap) with the longer day (one extra nap). Both use the same time scale; the purple goal line always falls between the green early and coral late bedtime markers.':'These are the closest feasible bedtimes, but the fixed-nap constraints prevent a comparison with exactly one extra nap. Each row shows its actual naps.';visual.append(note);
+ for(const kind of ['early','late']){
+  const option=options[kind];if(!option)continue;
+  const wrap=document.createElement('div');wrap.className='compare-row'+(kind===mode?' active':'');
+  const heading=document.createElement('div');heading.className='compare-heading';
+  const label=document.createElement('span');label.textContent=`${kind==='early'?'Earlier':'Later'} option · ${fmt(option.bed)} · ${option.events.length} naps`;
+  const status=document.createElement('span');status.className='selected-tag';status.textContent=kind===mode?'Selected schedule':'';
+  heading.append(label,status);wrap.append(heading);
+  const lane=document.createElement('div');lane.className='compare-track';makeTrack(lane,option.bed,option.events);wrap.append(lane);visual.append(wrap);
+ }
+ const foot=document.createElement('div');foot.className='compare-axis';const left=document.createElement('span'),right=document.createElement('span');left.textContent=fmt(start);right.textContent=fmt(maxBed);foot.append(left,right);visual.append(foot);
+ visual.setAttribute('aria-label',`Comparison of earlier and later nap schedules. Bedtime goal ${fmt(goal)}${options.early?`, earlier ${fmt(options.early.bed)}`:''}${options.late?`, later ${fmt(options.late.bed)}`:''}.`);
+}
 // Optimize the entire remaining day, including the LAST wake window before bedtime.
 // All fixed naps are required, all nap durations equal the target, and every wake
 // window (including the final one) must fall within the user-specified range.
@@ -43,35 +81,139 @@ function solve(w,bed,min,max,nl,fixed){
  }
  return walk(w,0);
 }
+// When the target bedtime is infeasible, compare two different nap cycles:
+// earlier bedtime following fewer naps versus later bedtime following an extra nap.
+// Each possibility is a COMPLETE valid schedule with every final wake window checked.
+function findAlternatives(w,goal,min,max,target,flex,fixed){
+ const maxBed=w+DAY, middle=(min+max)/2, scale=Math.max(1,(max-min)/2);
+ const byCount={early:new Map(),late:new Map()};
+ function best(kind,count,candidate){
+  const old=byCount[kind].get(count), delta=Math.abs(candidate.bed-goal);
+  if(!old||delta<Math.abs(old.bed-goal)||(delta===Math.abs(old.bed-goal)&&candidate.score<old.score))
+   byCount[kind].set(count,candidate);
+ }
+ for(let len=Math.max(10,target-flex);len<=Math.min(300,target+flex);len++){
+  const penalty=2*Math.pow((len-target)/Math.max(1,flex),2);
+  // Keep the best state for each time, required-nap index, and number of naps.
+  // Counting naps prevents an extra-nap alternative being pruned away.
+  const reached=new Map(),buckets=new Map();
+  function offer(t,i,count,score,events){
+   const key=`${t}|${i}|${count}`,old=reached.get(key);
+   if(old&&old.score<=score)return;
+   reached.set(key,{t,i,count,score,events});
+   if(!buckets.has(t))buckets.set(t,new Set());
+   buckets.get(t).add(key);
+  }
+  offer(w,0,0,penalty,[]);
+  for(let t=w;t<=maxBed-min;t++){
+   const keys=buckets.get(t);if(!keys)continue;
+   for(const key of keys){
+    const state=reached.get(key);if(!state)continue;
+    const {i,count}=state;
+    if(i===fixed.length){
+     const lower=t+min,upper=Math.min(t+max,maxBed);
+     if(lower<=upper){
+      const earlier=Math.min(upper,goal-1),later=Math.max(lower,goal+1);
+      const endCost=bed=>Math.pow(((bed-t)-middle)/scale,2);
+      if(earlier>=lower)best('early',count,{bed:earlier,score:state.score+endCost(earlier),events:state.events,len});
+      if(later<=upper)best('late',count,{bed:later,score:state.score+endCost(later),events:state.events,len});
+     }
+    }
+    if(t+min+len+min>maxBed)continue;
+    const next=fixed[i],lo=t+min,hi=Math.min(t+max,maxBed-len-min);
+    for(let start=lo;start<=hi;start++){
+     const isFixed=!!next&&start===next.start;
+     if(next&&!isFixed&&start+len>next.start)continue;
+     if(next&&start>next.start)break;
+     if(isFixed&&i+1<fixed.length&&start+len>fixed[i+1].start)continue;
+     const end=start+len,j=i+(isFixed?1:0);
+     const cost=state.score+Math.pow(((start-t)-middle)/scale,2)+.08;
+     offer(end,j,count+1,cost,[...state.events,{start,end,fixed:isFixed}]);
+    }
+   }
+  }
+ }
+ // Prefer adjacent nap counts: e.g. skip the last nap and go to bed early,
+ // or add one final nap and go to bed later. The bedtime offsets break ties.
+ let pair=null,rank=Infinity;
+ for(const [n,early] of byCount.early){
+  const late=byCount.late.get(n+1);if(!late)continue;
+  const distance=(goal-early.bed)+(late.bed-goal);
+  const score=distance*100+early.score+late.score;
+  if(score<rank){rank=score;pair={early,late,distinctNapCounts:true}}
+ }
+ if(pair)return pair;
+ // Some fixed-nap constraints prevent adjacent nap-count alternatives.
+ // In that case still show the closest valid bedtimes, but disclose this.
+ const closest=kind=>{
+  let result=null;
+  for(const candidate of byCount[kind].values()){
+   if(!result||Math.abs(candidate.bed-goal)<Math.abs(result.bed-goal)||
+      (Math.abs(candidate.bed-goal)===Math.abs(result.bed-goal)&&candidate.score<result.score))result=candidate;
+  }
+  return result;
+ };
+ return {early:closest('early'),late:closest('late'),distinctNapCounts:false};
+}
+function renderSchedule(w,goal,bed,answer,mn,mx,nl,mode,options=null){
+ $('timeline').replaceChildren();$('warnings').replaceChildren();
+ if(mode!=='goal')warn(`${mode==='early'?'Earlier':'Later'} bedtime: ${fmt(bed)} (${Math.abs(bed-goal)} minutes ${mode==='early'?'before':'after'} your ${fmt(goal)} goal). All wake windows, including the final one, are within ${mn}–${mx} minutes.`);
+ if(answer.len!==nl)warn(`Planned nap length adjusted from ${nl} to ${answer.len} minutes, within your selected flexibility.`);
+ const events=answer.events;
+ row(w,'Last woke up','Planning starts here');let prev=w;
+ events.forEach((e,i)=>{row(e.start,`Nap ${i+1}`,`${rng(e.start,e.end)} · ${answer.len}-minute nap · ${e.start-prev}-minute wake window`,e.fixed?'fixed':'suggested');prev=e.end});
+ const final=bed-prev;
+ row(bed,mode==='goal'?'Bedtime goal':'Adjusted bedtime',`Final wake window: ${final} minutes (within ${mn}–${mx} minutes)`);
+ $('next').textContent=events.length?rng(events[0].start,events[0].end):`Bedtime: ${fmt(bed)}`;
+ $('nextdetail').textContent=events.length?`${events[0].fixed?'Mandatory':'Suggested'} nap · ${answer.len} minutes · wake window ${events[0].start-w} minutes`:`Final wake window: ${final} minutes (valid)`;
+ draw(w,bed,events,goal,options,mode);
+}
+function showAlternatives(options,w,goal,mn,mx,nl){
+ const root=$('alternatives');root.replaceChildren();root.hidden=false;
+ let selected=options.early?'early':options.late?'late':null;
+ function select(kind){selected=kind;renderSchedule(w,goal,options[kind].bed,options[kind],mn,mx,nl,kind,options);for(const node of root.children)node.classList.toggle('chosen',node.dataset.kind===kind)}
+ for(const kind of ['early','late']){
+  const entry=options[kind],card=document.createElement('div');card.className='alternative'+(entry?'':' unavailable');card.dataset.kind=kind;
+  const heading=document.createElement('div');heading.className='eyebrow';heading.textContent=kind==='early'?'Earlier bedtime':'Later bedtime';card.append(heading);
+  const time=document.createElement('div');time.className='big';time.textContent=entry?fmt(entry.bed):'Not available';card.append(time);
+  const detail=document.createElement('div');detail.className='small';
+  detail.textContent=entry?`${Math.abs(entry.bed-goal)} min ${kind==='early'?'earlier':'later'} · ${entry.events.length} nap${entry.events.length===1?'':'s'} · ${entry.len} min/nap`:'No feasible bedtime on this side within the next 24 hours while preserving mandatory naps.';card.append(detail);
+  if(entry){const button=document.createElement('button');button.type='button';button.className='secondary';button.textContent='View this schedule';button.addEventListener('click',()=>select(kind));card.append(button)}
+  root.append(card);
+ }
+ if(selected)select(selected);
+}
 function plan(){
  const w=tm($('woke').value),b=tm($('bed').value),mn=Number($('wakeMin').value),mx=Number($('wakeMax').value),nl=Number($('naplen').value),flex=Number($('napFlex').value);
- $('error').textContent='';$('warnings').replaceChildren();$('timeline').replaceChildren();
+ $('error').textContent='';$('warnings').replaceChildren();$('timeline').replaceChildren();$('alternatives').hidden=true;$('alternatives').replaceChildren();
  if(w===null||b===null||!Number.isInteger(mn)||!Number.isInteger(mx)||!Number.isInteger(nl)||mn<15||mx>360||mn>mx||nl<10||nl>300||!Number.isInteger(flex)||flex<0||flex>30||fixedTimes.some(v=>tm(v)===null)){
-  $('error').textContent='Check the inputs: wake windows must be 15–360 minutes (minimum ≤ maximum), and nap length 10–300 minutes, and nap flexibility 0–30 minutes.';$('next').textContent='—';$('nextdetail').textContent='';$('visual').replaceChildren();return;
+  $('error').textContent='Check inputs: wake windows 15–360 min (minimum ≤ maximum), nap length 10–300 min, flexibility 0–30 min.';$('next').textContent='—';$('nextdetail').textContent='';$('visual').replaceChildren();return;
  }
  const bed=b<=w?b+DAY:b;
  let fixed=[];
  for(let i=0;i<fixedTimes.length;i++){
   let f=tm(fixedTimes[i]);if(f<w)f+=DAY;
-  if(f>=bed){warn(`Mandatory nap ${i+1} at ${fmt(f)} is outside this planning period and was not included.`);continue}
+  if(f>=bed){warn(`Mandatory nap ${i+1} at ${fmt(f)} is outside the original planning period and was not included.`);continue}
   fixed.push({start:f,index:i+1});
  }
  fixed.sort((a,b)=>a.start-b.start);
- for(let i=1;i<fixed.length;i++)if(fixed[i].start===fixed[i-1].start){$('error').textContent=`Two mandatory naps are both set for ${fmt(fixed[i].start)}. Remove one or choose different times.`;$('next').textContent='—';$('nextdetail').textContent='';$('visual').replaceChildren();save();return}
- let answer=null,chosen=nl,rank=Infinity;for(let len=Math.max(10,nl-flex);len<=Math.min(300,nl+flex);len++){const candidate=solve(w,bed,mn,mx,len,fixed);if(!candidate)continue;const score=candidate.score+Math.pow((len-nl)/Math.max(1,flex),2)*2;if(score<rank){rank=score;answer=candidate;chosen=len}}
- if(!answer){
-  $('next').textContent='No valid schedule';$('nextdetail').textContent='Adjust a fixed nap, bedtime, wake-window range, or nap length.';
-  warn(`No schedule satisfies all constraints. Every wake window, INCLUDING the final window before ${fmt(bed)}, must be ${mn}–${mx} minutes; nap lengths must be within ${Math.max(10,nl-flex)}–${Math.min(300,nl+flex)} minutes; and all mandatory nap starts must be honored.`);
-  row(w,'Last woke up','Planning starts here');fixed.forEach((f,i)=>row(f.start,`Mandatory nap ${i+1}`,'Requested start time (not yet feasible)','fixed'));row(bed,'Bedtime goal','Not reachable with current constraints');draw(w,bed,[]);save();return;
+ for(let i=1;i<fixed.length;i++)if(fixed[i].start===fixed[i-1].start){$('error').textContent=`Two mandatory naps are set for ${fmt(fixed[i].start)}. Remove one or choose different times.`;$('next').textContent='—';$('nextdetail').textContent='';$('visual').replaceChildren();save();return}
+ let answer=null,rank=Infinity;
+ for(let len=Math.max(10,nl-flex);len<=Math.min(300,nl+flex);len++){
+  const candidate=solve(w,bed,mn,mx,len,fixed);if(!candidate)continue;
+  const score=candidate.score+Math.pow((len-nl)/Math.max(1,flex),2)*2;
+  if(score<rank){rank=score;answer={...candidate,len}}
  }
- const events=answer.events;if(chosen!==nl)warn(`To keep all wake windows within ${mn}–${mx} minutes and honor the fixed times, planned nap length was adjusted from ${nl} to ${chosen} minutes.`);row(w,'Last woke up','Planning starts here');
- let prev=w;
- events.forEach((e,i)=>{row(e.start,`Nap ${i+1}`,`${rng(e.start,e.end)} · ${chosen}-minute nap · ${e.start-prev}-minute wake window`,e.fixed?'fixed':'suggested');prev=e.end});
- const final=bed-prev;
- row(bed,'Bedtime goal',`Final wake window: ${final} minutes (within ${mn}–${mx} minutes)`);
- $('next').textContent=events.length?rng(events[0].start,events[0].end):'Bedtime';
- $('nextdetail').textContent=events.length?`${events[0].fixed?'Mandatory':'Suggested'} nap · ${chosen} minutes · wake window ${events[0].start-w} minutes`:`Final wake window: ${final} minutes (valid)`;
- draw(w,bed,events);save();
+ if(answer){renderSchedule(w,bed,bed,answer,mn,mx,nl,'goal');save();return}
+ $('next').textContent='Finding nearest bedtimes…';$('nextdetail').textContent='Target bedtime is not feasible with your current constraints.';
+ const options=findAlternatives(w,bed,mn,mx,nl,flex,fixed);
+ if(options.early||options.late){showAlternatives(options,w,bed,mn,mx,nl)}
+ else{
+  $('next').textContent='No valid schedule found';$('nextdetail').textContent='No earlier or later bedtime within 24 hours of the last wake-up can meet all the constraints.';
+  warn('Try adjusting a mandatory nap, wake-window range, or nap-length flexibility.');
+  row(w,'Last woke up','Planning starts here');fixed.forEach((f,i)=>row(f.start,`Mandatory nap ${i+1}`,'Required start time (currently infeasible)','fixed'));row(bed,'Bedtime goal','Not reachable');draw(w,bed,[],bed);
+ }
+ save();
 }
 try{
  const v3=JSON.parse(localStorage.getItem('littleNapSettingsV3')||'null');

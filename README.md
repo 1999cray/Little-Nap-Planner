@@ -1,25 +1,13 @@
-# Little Nap Planner
+# Little Nap Planner — v4 nap-cycle bedtime comparison
 
-A tiny installable web app for iPhone and Android. No backend, no logins, no shared data.
+When the requested bedtime is not feasible, the planner now prioritizes a meaningful **one-fewer-nap / one-extra-nap** comparison. The early option has a shorter nap sequence, and the late option has one additional nap. Both keep all mandatory nap start times and satisfy every wake window, including the final wake window before bedtime.
 
-## Deploy on GitHub Pages
+The comparison timeline shows two actual nap schedules on the **same time axis**. The **purple dashed** line is the goal, the **green** line is the earlier bedtime, and the **coral** line is the later bedtime. The earlier marker must appear before the goal; the later marker must appear after it.
 
-1. Sign in to GitHub, click **New repository**, name it `little-nap-planner`, select **Public**, and create it.
-2. In the new repository, choose **Add file > Upload files**.
-3. **Unzip the download** and upload the contents of this folder (`index.html`, `manifest.webmanifest`, `sw.js`, `.nojekyll`, and the `icons` folder). Do not upload only the ZIP.
-4. Commit the files to the `main` branch.
-5. Choose **Settings > Pages > Build and deployment > Source: Deploy from a branch**, select `main` and `/(root)`, then **Save**.
-6. Open `https://YOUR-USERNAME.github.io/little-nap-planner/` once the Pages deployment completes.
+If a one-nap-count difference is impossible with the constraints, the planner shows the nearest feasible alternatives and explains that limitation instead of presenting the scenarios as different nap cycles.
 
-## Install
+## Update GitHub Pages
 
-- **iPhone:** Open that link in Safari > Share > Add to Home Screen > enable Open as Web App (if shown) > Add.
-- **Android:** Open in Chrome > menu > Install app (or Add to Home screen).
+Replace `index.html` and `sw.js` at the **repository root**, commit to `main`, and reopen the web app online once so its offline cache refreshes. `README.md` is optional. **Do not replace** the `icons/` folder or `manifest.webmanifest`; existing home-screen icons and independently saved settings are preserved.
 
-## Notes
-
-- Times and settings are stored **locally on each device** in the browser. Clearing site data or uninstalling may remove them.
-- Works offline after the first successful visit while online and caching completes.
-- GitHub Pages is public, so **do not upload private baby information** to the repository. The schedule data stays on the phone.
-- For updates, replace `index.html` and increment `CACHE_NAME` in `sw.js` before uploading. Previously installed copies may need to reopen online or have site data refreshed.
-- The planner is a scheduling aid, not medical advice.
+This is a planning aid, not medical sleep guidance.
