@@ -1,13 +1,12 @@
-# Little Nap Planner — v4 nap-cycle bedtime comparison
+# Little Nap Planner v5 — update only
 
-When the requested bedtime is not feasible, the planner now prioritizes a meaningful **one-fewer-nap / one-extra-nap** comparison. The early option has a shorter nap sequence, and the late option has one additional nap. Both keep all mandatory nap start times and satisfy every wake window, including the final wake window before bedtime.
+Replace only `index.html` and `sw.js` in the root of your existing GitHub Pages repository. Commit to `main`. Do not replace `icons/` or `manifest.webmanifest`.
 
-The comparison timeline shows two actual nap schedules on the **same time axis**. The **purple dashed** line is the goal, the **green** line is the earlier bedtime, and the **coral** line is the later bedtime. The earlier marker must appear before the goal; the later marker must appear after it.
+## Changes
+- Exact bedtime goal remains first priority when a valid schedule exists.
+- Otherwise, early and late bedtime options appear as compact side-by-side selector buttons, including on small phones.
+- Only the selected option's naps, timeline, and schedule details appear. The timeline has three colored bedtime markers on the same scale.
+- Removed redundant bedtime explanation and nap-length-adjustment notices for changes within the allowed flexibility. Genuine errors and infeasible-schedule notices remain.
+- Upgraded the service-worker cache to v5.
 
-If a one-nap-count difference is impossible with the constraints, the planner shows the nearest feasible alternatives and explains that limitation instead of presenting the scenarios as different nap cycles.
-
-## Update GitHub Pages
-
-Replace `index.html` and `sw.js` at the **repository root**, commit to `main`, and reopen the web app online once so its offline cache refreshes. `README.md` is optional. **Do not replace** the `icons/` folder or `manifest.webmanifest`; existing home-screen icons and independently saved settings are preserved.
-
-This is a planning aid, not medical sleep guidance.
+After GitHub Pages deploys, open the hosted site online once on each device and relaunch the installed app to receive the update. Saved settings remain local.
